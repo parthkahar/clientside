@@ -144,6 +144,7 @@ if (forceCodecChange) {  // Set forceCodecChange to true if you want to change t
 
 		mediaRecorder.onstop = function(){
 			log('mediaRecorder.onstop, mediaRecorder.state = ' + mediaRecorder.state);
+			log('test');
 
 			//var recording = new Blob(chunks, {type: containerType});
 			var recording = new Blob(chunks, {type: mediaRecorder.mimeType});
